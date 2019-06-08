@@ -1,0 +1,40 @@
+[core]
+    excludesfile = ~/.gitignore_global
+    autocrlf = false
+    pager = less -r
+    editor = vim
+    precomposeunicode = true
+    quotepath = false
+[alias]
+    cl = clone
+    cfg = config --global
+    c = commit
+    ci = commit -a
+    br = branch
+    p = push
+    pl = pull
+    a = add .
+    b = branch
+    rmt = remote -v
+    co = checkout
+    m = merge
+    df = diff
+    st = status
+    f = fetch --all -p
+    rsh = reset --hard
+    fp = fetch origin+refs/pull*:refs/remotes/pull/*
+[color]
+    ui = auto
+[push]
+    default = current
+[pull]
+    rebase = true
+[hub]
+    protocol = https
+[credential]
+    helper = gcloud.sh
+[pager]
+    log = diff-highlight | less
+[user]
+	name = kenicyam
+	email = kenicyam@yahoo.co.jp
